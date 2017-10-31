@@ -10,16 +10,22 @@
 
 <body>
     <form action="get">
-
-        <h>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</h>
+	<fieldset><legend>Unete</legend>
+        <p>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</p>
         <ul>
-            <li>Nombre y apellidos<label for="nombreApellidos"><input type="text"></label>
+            <li><label for="form_nombreApellidos">Nombre y apellidos: </label><input type="text" name="nombreApellidos" id="form_nombreApellidos">
             </li>
-            <li>Email:<label for="email"><input type="text"></label>
+			<!--
+            <li><label>Nombre y apellidos: <input type="text" name="nombreYapellidos"></label>
+            </li>
+			-->
+
+            <li><label for="form_email">Email:</label><input type="text" name="email" id="form_email">
             </li>
 
         </ul>
-        <button name="Enviar">enviar</button>
+        <button type="submit" name="Enviar">enviar</button>
+		</fieldset>
     </form>
 
 </body>

@@ -8,27 +8,32 @@
 
 <body>
     <form method="get">
+        <fieldset>
+            <legend>Unete</legend>
+            <h>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</h>
+            <ul>
+                <li><label for="form_nombreApellidos">Nombre y apellidos<input type="text" name="nombreApellidos" id="form_nombreApellidos"></label>
+                </li>
+                <li>Comentario:<label for="comentario"><textarea name="comentario" placeholder="Escribe aqui tu comentario" cols="30" rows="10"></textarea></label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Campos d eentrada d etexto especiales</legend>
+            <ul>
+                <li>Contraseña:<label for="contraseña"><input type="text"></label>
+                </li>
+                <li>Buscar[HTML5]:<label for="burcar"><input type="text"></label>
+                </li>
+                <li>Email[HTML5]:<label for="email"><input type="text"></label>
+                </li>
+                <li>Telefono[HTML5]:<label for="telefono"><input type="text"></label>
+                </li>
+                <li>URL[HTML5]:<label for="url"><input type="text"></label>
+                </li>
 
-        <h>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</h>
-        <ul>
-            <li>Nombre y apellidos<label for="nombreApellidos"><input type="text"></label>
-            </li>
-            <li>comentario:<label for="comentario"><textarea name="comentario" placeholder="Escribe aqui tu comentario" cols="30" rows="10"></textarea></label>
-            </li>
-        </ul>
-        <ul>
-            <li>Contraseña:<label for="contraseña"><input type="text"></label>
-            </li>
-            <li>Buscar[HTML5]:<label for="burcar"><input type="text"></label>
-            </li>
-            <li>Email[HTML5]:<label for="email"><input type="text"></label>
-            </li>
-            <li>Telefono[HTML5]:<label for="telefono"><input type="text"></label>
-            </li>
-            <li>URL[HTML5]:<label for="url"><input type="text"></label>
-            </li>
-
-        </ul>
+            </ul>
+        </fieldset>
         <button name="Enviar">enviar</button>
     </form>
 </body>
