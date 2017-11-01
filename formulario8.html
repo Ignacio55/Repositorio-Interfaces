@@ -7,9 +7,11 @@
 </head>
 
 <body>
-    <h>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</h>
+   <fieldset>
+            <legend>Unete</legend>
+    <p>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</p>
     <ul>
-        <li>Color:<label for="color"><select name="color" id="">
+        <li><label for="form_color">Color:<select name="color" id="form_color">
                 <option value="rojo">Rojo</option>
                 <option value="azul">Azul</option>
                 <option value="negro">Negro</option>
@@ -17,11 +19,11 @@
                 <option value="dorado">Dorado</option>
             </select></label>
         </li>
-        <li>Caracteristicas:<label for="caracteristicas"><input type="range" placeholder="12:30"></label>
+        <li><label for="form_caracteristicas">Caracteristicas:<input type="range" name="caracteristicas" id="form_caracteristicas" placeholder="12:30"></label>
         </li>
     </ul>
-
-    <button name="Enviar">enviar</button>
+    </fieldset>
+    <button name="Enviar" type="submit">enviar</button>
 </body>
 
 </html>

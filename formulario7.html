@@ -7,18 +7,20 @@
 </head>
 
 <body>
-    <h>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</h>
+   <fieldset>
+            <legend>Unete</legend>
+    <p>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</p>
     <ul>
-        <li>Nota:<label for="nota"><input type="text" value="0"></label>
+        <li><label for="form_nota">Nota:<input type="text" name="nota" id="form_nota" value="0"></label>
         </li>
-        <li>Edad:<label for="edad"><input type="range" placeholder="12:30"></label>
+        <li><label for="form_edad">Edad:<input type="range" name="edad" id="form_edad" placeholder="12:30"></label>
         </li>
-        <li>color:<label for="color"><input type="color" value="15/12/2012 12:30"></label>
+        <li><label for="form_color">Color:<input type="color" name="color" id="form_color" value="15/12/2012 12:30"></label>
         </li>
 
     </ul>
-
-    <button name="Enviar">enviar</button>
+    </fieldset>
+    <button name="Enviar" type="submit">enviar</button>
 </body>
 
 </html>

@@ -8,25 +8,26 @@
 
 <body>
     <form method="get">
-
-        <h>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</h>
+<fieldset>
+            <legend>Unete</legend>
+        <p>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</p>
         <ul>
-            <li>Fecha<label for="fecha"><input type="text" placeholder="15/12/2012"></label>
+            <li><label for="form_fecha">Fecha<input type="text" name="fecha" id="form_fecha" placeholder="15/12/2012"></label>
             </li>
-            <li>Hora<label for="hora"><input type="text" placeholder="12:30"></label>
+            <li><label for="form_hora">Hora<input type="text" name="hora" id="form_hora" placeholder="12:30"></label>
             </li>
-            <li>Fecha y hora<label for="fechaHora"><input type="text" value="15/12/2012 12:30"></label>
+            <li><label for="form_fechaHora">Fecha y hora<input type="text" name="fechaHora" id="form_fechaHora" value="15/12/2012 12:30"></label>
             </li>
-            <li>fecha y hora (local)<label for="fechaHoraLocal"><input type="text" placeholder="15/12/2012 12:30"></label>
+            <li><label for="form_fechaHoraLocal">fecha y hora (local)<input type="text" name="fechaHoraLocal" id="form_fechaHoraLocal" placeholder="15/12/2012 12:30"></label>
             </li>
-            <li>Mes<label for="mes"><input type="text" placeholder="diciembre de 2012"></label>
+            <li><label for="form_mes">Mes<input type="text" name="mes" id="form_mes" placeholder="diciembre de 2012"></label>
             </li>
-            <li>Semana<label for="semana"><input type="text" placeholder="Semana --, ----"></label>
+            <li><label for="form_semana">Semana<input type="text" name="semana" id="form_semana" placeholder="Semana --, ----"></label>
             </li>
 
         </ul>
-
-        <button name="Enviar">enviar</button>
+        </fieldset>
+        <button name="Enviar" type="submit">enviar</button>
     </form>
 </body>
 

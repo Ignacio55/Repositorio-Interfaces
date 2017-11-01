@@ -8,20 +8,21 @@
 
 <body>
     <form method="get">
-
-        <h>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</h>
+<fieldset>
+            <legend>Unete</legend>
+        <p>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</p>
         <ul>
-            <li>Nombre y apellidos<label for="nombreApellidos"><input type="text"></label>
+            <li><label for="form_nombreApellidos">Nombre y apellidos:<input type="text" name="nombreApellidos" id="form_nombreapellidos"></label>
             </li>
-            <li>Email:<label for="email"><input type="text"></label>
+            <li><label for="form_email">Email:<input type="text" name="email" id="form_email"></label>
             </li>
-            <li>comentario:<label for="comentario1"><textarea name="comentario" placeholder="Escribe aqui tu comentario" cols="30" rows="10"></textarea></label>
+            <li><label for="form_comentario1">Comentario:<textarea name="comentario1" id="form_comentario1" placeholder="Escribe aqui tu comentario" cols="30" rows="10"></textarea></label>
             </li>
-            <li>comentario:<label for="comentario2"><textarea name="comentario" cols="30" rows="10">Escribe aqui tu comentario</textarea></label>
+            <li><label for="form_comentario2">Comentario:<textarea name="comentario2" id="form_comentario2" cols="30" rows="10">Escribe aqui tu comentario</textarea></label>
             </li>
         </ul>
-
-        <button name="Enviar">enviar</button>
+</fieldset>
+        <button type="submit" name="Enviar">enviar</button>
     </form>
 </body>
 
