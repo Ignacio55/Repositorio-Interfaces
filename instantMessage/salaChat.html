@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sala de chat</title>
+    
+    <link rel="stylesheet" href="./static/css/bootstrap.css">
+    <script type="text/javascript" src="cicloMensajes.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    
+	<style type="text/css">
+  	.propio {
+  		margin:5px;
+    	background-color: green;
+		border-radius:5px;
+		padding:5px;
+		width: 70%;
+		float: left;
+	}
+	.ajeno {
+		margin:5px;
+    	background-color: grey;
+		border-radius:5px;
+		padding:5px;
+		width: 70%;
+		float: right;
+	}
+  </style>
+</head>
+<body onload="abrirChat(event)" >
+	<header>
+	
+		<h1 id="titulo"></h1>
+		<script>
+    obtenernombre(location.href);
+    </script>
+		<a href="frontend.php">Salir de la sala</a>
+	</header>
+	<div class="row justify-content-center">
+		<main class="col-10">
+			<div id="chat">
+				<p class="col-8 propio">hjghghjgjhg</p>
+				<p class="col-8 ajeno">hjgjhgjgh</p>
+				<p class="col-8 propio">jhgjhghjg</p>
+				<p class="col-8 ajeno">jhgjgjh</p>
+			</div>
+			<form id="form1" name="form1" method="post" action="salaChat.php">
+				<div id="texto">
+					<input id="idMensajeTexto" name="mensaje" type="text">
+					<input type="hidden" name="id" value="<?php echo $_GET['id']?>">
+					<input type="submit" onclick="enviarmensaje(event)" name="botonEnviar" value="Enviar">
+				 </div>
+			</form>
+			<footer></footer>
+			    <script src="./static/js/tether.min.js"></script>
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/bootstrap.js"></script>
+		</main>
+	</div>
+</body>
+</html>

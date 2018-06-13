@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión - Instant message</title>
+    <link rel="stylesheet" href="./static/css/bootstrap.css">
+  	
+	<style type="text/css">
+  	footer {
+    color: white;
+    background-color: green;
+		display: block;
+		padding-top: 20 px;
+		position: absolute;
+		height: 2em;
+		width: 100%;
+		bottom: 0px;
+	}
+  </style>
+</head>
+<body>
+    <header>
+        <h1 class="row justify-content-center">Instant message</h1>
+    </header>
+    <div class="row justify-content-center">
+	    <main class="col-4">
+	    <div class="row justify-content-center">
+		    <form class="col-6" id="form1" name="form1" method="post" action="index.php">
+		        <fieldset>
+		            <legend>Inicio de sesion</legend>
+		            <div class="form-group">
+		            	<label>Usuario:<input name="campoUsuario" type="text"></label>
+		            </div>
+		            <div class="form-group">
+		            	<label>Contraseña:<input name="campoPassword" type="password"></label>
+		            </div>
+		            <input type="submit" class="btn btn-success" name="botonAcceder" value="Acceder"/>
+		        </fieldset>
+	        </form>
+			</div>
+	    </main>
+    </div>
+    <footer><p>Desarrollado por Ignacio Gómez</p></footer>
+    <script src="./static/js/tether.min.js"></script>
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/bootstrap.js"></script>
+</body>
+
+</html>
