@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;URL='logout.php'" /> 
     <title>Sala de chat</title>
     
     <link rel="stylesheet" href="./static/css/bootstrap.css">
@@ -46,7 +47,7 @@
 			</div>
 			<form id="form1" name="form1" method="post" action="salaChat.php">
 				<div id="texto">
-					<input id="idMensajeTexto" name="mensaje" type="text">
+					<input id="idMensajeTexto" name="mensaje" type="text" maxLength="250" placeHolder="Maximo 250 caracteres">
 					<input type="hidden" name="id" value="<?php echo $_GET['id']?>">
 					<input type="submit" onclick="enviarmensaje(event)" name="botonEnviar" value="Enviar">
 				 </div>

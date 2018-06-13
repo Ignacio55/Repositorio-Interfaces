@@ -1,12 +1,5 @@
 <?php
 session_start();
-// Para que el navegador no haga cache de los datos devueltos por la página PHP.
-header('Cache-Control: no-cache, must-revalidate');
-//header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
-//esta linea es paraexpulsar la sesión despues de un tiempo de inactividad
-header("refresh:1,url='logout.php'");
-//echo("+++++".$_POST['tiempo']);
-// Imprimimos un mensaje con los textos recibidos
 
 if (isset($_POST['estado'])){
     echo("HE LLEGADO");

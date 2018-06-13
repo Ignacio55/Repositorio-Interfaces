@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if($_SESSION['permisos']!="admin"){
+    echo("No estas autorizado para acceder");
+    sleep(5);
+    header("refresh:0,url='index.html'");
+}
 //$con = mysqli_connect("localhost:3306","administrador","123Daw$321","instantMessage") or die("No se pudo conectar");
 $con = mysqli_connect("localhost","administrador","123Daw$321","instantMessage") or die("No se pudo conectar");
 ?>

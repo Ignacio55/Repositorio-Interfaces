@@ -21,9 +21,9 @@ if(isset($_POST['botonAcceder'])){
                 $_SESSION['id'] = $reg['usuario_id'];
                 $_SESSION['permisos'] = $reg['permisos'];
                 if($reg['permisos'] == "admin"){
-                    header("refresh:5,url='backend.php'");
+                    header("refresh:0,url='backend.php'");
                 }else if($reg['permisos']=="usuario"){
-                    header("refresh:5,url='frontend.php'");
+                    header("refresh:0,url='frontend.php'");
                 }
             }else{
                 echo("Esta cuenta esta suspendida, pongase en contacto con un administrador para reactivarla.");
@@ -34,7 +34,7 @@ if(isset($_POST['botonAcceder'])){
         }
     }else{
         $_SESSION['permisos']="";
-        header("refresh:5,url='registro.php'");
+        header("refresh:0,url='registro.php'");
     }
 }
 ?>
